@@ -41,3 +41,39 @@
     width: 240px;
     height: 240px;
 }
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat !important;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveTop {
+    background-size: 50% 100px;
+    animation: wave 3s;
+    animation-delay: 1s;
+}
+@keyframes wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.50);
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1);
+    }
+}
+.waveMid {
+    background-size: 50% 120px;
+    animation: wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+    animation: wave 15s linear infinite;
+}
