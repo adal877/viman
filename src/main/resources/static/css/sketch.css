@@ -1,0 +1,43 @@
+.full-align {
+    text-align: -webkit-center;
+}
+.main-circle {
+    height: 135px !important;
+    margin-top: 14%;
+    text-align: center !important;
+    display: block;
+    background: burlywood;
+    border-radius: 35px;
+    width: 50%;
+}
+.full-options {
+    display: inline-grid;
+    justify-items: center;
+}
+.options {
+    display: inline-grid !important;
+    background: darkslategrey;
+    color: antiquewhite;
+    border-radius: 35px;
+    width: 160%;
+    height: 140%;
+}
+.options:hover {
+    background: antiquewhite;
+    color: darkslategrey;
+    border-radius: 35px;
+}
+.options:link { text-decoration: none; }
+.options:visited { text-decoration: none; }
+.options:hover { text-decoration: none; }
+.options:active { text-decoration: none; }
+
+.draw-diagonal-wave {
+    background:
+            radial-gradient(7em 7em at 35% 35%, red 50%, transparent 50%),
+            radial-gradient(7em 7em at 50% 50%, gold 50%, transparent 50%),
+            radial-gradient(7em 7em at 65% 65%, blue 50%, transparent 50%);
+    background-repeat: repeat;
+    width: 240px;
+    height: 240px;
+}
