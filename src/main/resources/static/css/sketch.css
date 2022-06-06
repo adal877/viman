@@ -67,6 +67,7 @@
 .slide_left:hover {
     box-shadow: inset 0 0 0 50px darkslategrey;
     color: burlywood;
+    transition: 1s;
 }
 .go-home:link { text-decoration: none; }
 .go-home:visited { text-decoration: none; }
@@ -90,7 +91,7 @@
 }
 .visit {
     height: 135px !important;
-    margin-top: 14%;
+    margin-top: 5%;
     text-align: center !important;
     display: block;
     background: burlywood;
