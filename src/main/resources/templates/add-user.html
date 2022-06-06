@@ -1,21 +1,40 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
-<head>
-  <title>Add user</title>
-  <meta charset="UTF-8">
-</head>
-<body>
-<h1>Add User</h1>
-<form action="#" th:action="@{/add-user}" th:object="${user}" method="post">
-  <p>
-    Name: <input type="text" th:field="*{Name}">
-  </p>
-  <p>
-    Occupation: <input type="text" th:field="*{Occupation}">
-  </p>
-  <p>
-    <input type="submit" value="Submit"/> <input type="reset" value="Reset">
-  </p>
-</form>
-</body>
+<html xmlns:th="http://www.thymeleaf.org" style="background: darkslategrey">
+<link rel="stylesheet" href="../static/css/sketch.css" th:href="@{/css/sketch.css}">
+<div class="full-align">
+  <head>
+    <title>Add user</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+  <h1 style="color: antiquewhite">Add User</h1>
+  <div class="add-user add-user-circle">
+    <form action="#" th:action="@{/add-user}" th:object="${user}" method="post">
+      <p>
+        Name:
+        <br/>
+        <input required type="text" th:field="*{Name}">
+      </p>
+      <p>
+        Occupation:
+        <br/>
+        <input required type="text" th:field="*{Occupation}">
+      </p>
+      <p>
+        Frequenta as atividades? <input type="checkbox" th:field="*{go2Activities}"/>
+      </p>
+      <p>
+        <input type="submit" value="Submit"/> <input type="reset" value="Reset"/>
+      </p>
+    </form>
+    <div id="go-home">
+      <div id="go-home-inner">
+    <p>
+      <a href="/" class="go-home go-home-inner">Go Home</a>
+    </p>
+      </div>
+    </div>
+  </div>
+  </body>
+</div>
 </html>

@@ -1,24 +1,35 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en" style="background: darkslategrey;color: antiquewhite;text-align: center">
+<!--<div class="full-align">-->
 <head>
   <title>Submit new visit</title>
   <meta charset="UTF-8">
 </head>
-<body>
-<h1>New Visit</h1>
-<form action="#" th:action="@{/new-visit}" th:object="${visit}" method="post">
-  <p>
-    Birth date (yyyy/mm/dd): <input type="date" th:field="*{BirthDate}">
-  </p>
-  <p>
-    Age: <input type="number" th:field="*{Age}">
-  </p>
-  <p>
-    Address: <input type="text" th:field="*{Occupation}">
-  </p>
-  <p>
-    <input type="submit" value="Submit"/> <input type="reset" value="Reset">
-  </p>
-</form>
+<div class="visit">
+    <body>
+    <h1>New Visit</h1>
+    <form action="#" th:action="@{/new-visit}" th:object="${visits}" method="post">
+        <p>
+            Name: <input required type="text" th:field="*{Name}"/> Address: <input type="text" placeholder="[Street], [district]" th:field="*{Address}"/>
+        </p>
+        <p>
+            Age: <input required type="number" th:field="*{Age}"/> Book(s): <input th:if="${go2Activities} ? required : ''" type="text" placeholder="Book..." th:field="*{BookStudying}"/>
+        </p>
+        <p>
+            Frequenta as atividades? <input type="checkbox" th:field="*{go2Activities}"/>
+        </p>
+        <textarea rows="12" cols="100" name="description" th:field="*{Observation}">
+                Enter details here...
+             </textarea><br>
+        <p>
+          <input type="submit" value="Submit"/> <input type="reset" value="Reset"/>
+        </p>
+        <br/>
+        <p>
+            <a href="/" class="go-home go-home-inner">Go Home</a>
+        </p>
+    </form>
 </body>
+<!--</div>-->
+</div>
 </html>

@@ -1,4 +1,4 @@
-package com.example.sb_test2;
+package com.example.sb_test2.Utils;
 
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.http.HttpStatus;

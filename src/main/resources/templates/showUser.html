@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" style="background: darkslategrey">
+<link rel="stylesheet" href="../static/css/sketch.css" th:href="@{/css/sketch.css}">
+<div class="full-align" style="color: antiquewhite">
+<head>
+  <title>User Data | Main</title>
+  <meta charset="UTF-8">
+</head>
+<h1>User</h1>
+<div class="">
+  <body>
+    <div class="user">
+      <br/>
+      <p th:text="'Name: ' + ${user.Name}"></p>
+      <p th:text="'Occupation: ' + ${user.Occupation}"></p>
+      Goes to the activities? <p th:type="checkbox" th:text="${user.go2Activities} ? 'Yes' : 'No'"></p>
+    </div>
+    <a href="/add-user" class="go-home slide_left">Submit another user</a>
+    <a href="/new-visit" class="go-home slide_left">Create a visit to it's user</a>
+    <br/>
+    <a href="/" class="go-home slide_left">Go Home</a>
+  </body>
+</div>
+</div>
+</html>

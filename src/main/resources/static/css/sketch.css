@@ -1,6 +1,20 @@
 .full-align {
     text-align: -webkit-center;
 }
+.add-user {
+    display: inline-grid !important;
+    color: darkslategrey;
+    /*color: antiquewhite !important;*/
+}
+.add-user-circle {
+    height: 193px !important;
+    margin-top: 14%;
+    text-align: center !important;
+    color: black;
+    background: burlywood;
+    border-radius: 35px;
+    width: 30%;
+}
 .main-circle {
     height: 135px !important;
     margin-top: 14%;
@@ -32,48 +46,55 @@
 .options:hover { text-decoration: none; }
 .options:active { text-decoration: none; }
 
-.draw-diagonal-wave {
-    background:
-            radial-gradient(7em 7em at 35% 35%, red 50%, transparent 50%),
-            radial-gradient(7em 7em at 50% 50%, gold 50%, transparent 50%),
-            radial-gradient(7em 7em at 65% 65%, blue 50%, transparent 50%);
-    background-repeat: repeat;
-    width: 240px;
-    height: 240px;
+.go-home {
+    margin-top: 5%;
+    display: inline-grid !important;
+    background: burlywood;
+    color: darkslategrey;
+    border-radius: 35px;
+    width: 60% !important;
+    height: 140%;
+    border-color: antiquewhite;
+    border: 2px;
+    border-style: solid;
 }
-.wave {
-    position: absolute;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    background-repeat: repeat no-repeat !important;
-    background-position: 0 bottom;
-    transform-origin: center bottom;
+/*.go-home:hover {*/
+/*    background: darkslategrey;*/
+/*    color: antiquewhite;*/
+/*    border-radius: 35px;*/
+/*    border-color: dimgray;*/
+/*}*/
+.slide_left:hover {
+    box-shadow: inset 0 0 0 50px darkslategrey;
+    color: burlywood;
 }
-.waveTop {
-    background-size: 50% 100px;
+.go-home:link { text-decoration: none; }
+.go-home:visited { text-decoration: none; }
+.go-home:hover { text-decoration: none; }
+.go-home:active { text-decoration: none; }
+
+.show-data {
+    background: darkslategray;
+    text-align: center;
+    color: antiquewhite;
 }
-.waveTop {
-    background-size: 50% 100px;
-    animation: wave 3s;
-    animation-delay: 1s;
+.user {
+    height: 158px !important;
+    margin-top: 14%;
+    text-align: center !important;
+    display: block;
+    background: burlywood;
+    color: black;
+    border-radius: 35px;
+    width: 50%;
 }
-@keyframes wave {
-    0% {
-        transform: translateX(0) translateZ(0) scaleY(1);
-    }
-    50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.50);
-    }
-    100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1);
-    }
-}
-.waveMid {
-    background-size: 50% 120px;
-    animation: wave 10s linear infinite;
-}
-.waveBottom {
-    background-size: 50% 100px;
-    animation: wave 15s linear infinite;
+.visit {
+    height: 135px !important;
+    margin-top: 14%;
+    text-align: center !important;
+    display: block;
+    background: burlywood;
+    color: black;
+    border-radius: 35px;
+    width: 50%;
 }

@@ -1,15 +1,22 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-  <title>Show User Data</title>
-  <meta charset="UTF-8">
-</head>
-<body>
-<h1>Result</h1>
-<p th:text="'Name: ' + ${visit.NameVisit}"></p>
-<p th:text="'Age: ' + ${visit.Age}"></p>
-<p th:text="'Birth date: ' + ${visit.BirthDate}"></p>
-<p th:text="'Address: ' + ${visit.Address}"></p>
-<a href="/add-user">Submit another visit</a>
-</body>
+<html xmlns:th="http://www.thymeleaf.org" style="background: darkslategrey;color: antiquewhite">
+<link rel="stylesheet" href="../static/css/sketch.css" th:href="@{/css/sketch.css}">
+<div class="full-align">
+  <head>
+    <title>Show Visits | Main</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+  <h1>Visits</h1>
+  <div class="visit">
+    <p th:text="'Name: ' + ${visits.Name}"></p> <p th:text="'Address: ' + ${visits.Address}"></p>
+    <p th:text="'Age: ' + ${visits.Age}"></p> <p th:text="'Book(s): ' + ${visits.BookStudying} ? ${visits.BookStudying} : 'Nothing registered...'"></p>
+    <p th:text="'Observation(s): ' + ${visits.Observation}"></p>
+    Goes to the activities? <p th:type="checkbox" th:text="${visits.go2Activities} ? 'Yes' : 'No'"></p>
+    <br/>
+    <br/>
+    <a href="/new-visit" class="go-home slide_left">Submit another visit</a>
+  </div>
+  </body>
+</div>
 </html>
