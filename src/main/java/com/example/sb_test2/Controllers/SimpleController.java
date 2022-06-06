@@ -13,10 +13,9 @@ import java.util.List;
 public class SimpleController {
     @GetMapping("/add-user")
     public String sendForm(User user) {
-        List<User> users = null;
-        users.add(user);
-        if(users.contains(user)) {
-            return "";
+        User.users.add(user);
+        if(User.users.contains(user)) {
+            return "showUser";
         }
         return "add-user";
     }
@@ -26,7 +25,10 @@ public class SimpleController {
     }
     @GetMapping("/new-visit")
     public String sendFormVisit(Visits visits, User users) {
-//        Visits.visitsList.add(visits);
+        Visits.visits.add(visits);
+        if(Visits.visits.contains(visits)) {
+            return "showVisits";
+        }
         return "new-visit";
     }
     @PostMapping("/new-visit")

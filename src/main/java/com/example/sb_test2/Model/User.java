@@ -3,6 +3,7 @@ package com.example.sb_test2.Model;
 import java.util.List;
 
 public class User extends Person {
+    public static List<User> users;
     private String Occupation;
     private String PlaceOfWork;
     public String getOccupation() {

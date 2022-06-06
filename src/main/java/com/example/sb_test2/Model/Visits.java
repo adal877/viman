@@ -1,14 +1,15 @@
 package com.example.sb_test2.Model;
 
-public class Visits extends Person {
+import java.util.List;
 
+public class Visits extends Person {
+    public static List<Visits> visits;
     private String Address;
     private String BookStudying;
     private String Observation;
     public String getAddress() {
         return Address;
     }
-
     public void setAddress(String address) {
         Address = address;
     }
