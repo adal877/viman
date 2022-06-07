@@ -109,6 +109,11 @@
     left: -24px;
     bottom: -24px;
 }
+.fa-bahai:before {
+    content: "\f666";
+    background: dimgray;
+    color: burlywood;
+}
 .hide {
     display: none;
 }
@@ -116,19 +121,18 @@
     visibility: visible !important;
     color: antiquewhite !important;
 }
-#footer-icon-bahai:hover {
-    visibility: visible;
-    display: flex;
-    transition: 1.5s;
-    position: fixed;
-    padding: 18px 15px 25px 32px;
-    width: 223px;
-    height: 29px;
-    border-radius: 16%;
-    background: dimgray;
-    left: -24px;
-    bottom: -24px;
-}
+/*#footer-icon-bahai:hover {*/
+/*    display: flex;*/
+/*    !*transition: 1.5s;*!*/
+/*    position: fixed;*/
+/*    padding: 18px 15px 25px 32px;*/
+/*    width: 223px;*/
+/*    height: 29px;*/
+/*    border-radius: 16%;*/
+/*    background: dimgray;*/
+/*    left: -24px;*/
+/*    bottom: -24px;*/
+/*}*/
 #footer-icon-git {
     position: fixed;
     padding: 18px 15px 25px 32px;
