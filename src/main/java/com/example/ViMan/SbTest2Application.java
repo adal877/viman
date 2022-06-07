@@ -1,4 +1,4 @@
-package com.example.sb_test2;
+package com.example.ViMan;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

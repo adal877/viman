@@ -1,4 +1,4 @@
-package com.example.sb_test2.Model;
+package com.example.ViMan.Model;
 
 import java.util.List;
 

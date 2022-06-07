@@ -1,8 +1,7 @@
-package com.example.sb_test2.Utils;
+package com.example.ViMan.Utils;
 
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.http.HttpStatus;
-import org.springframework.integration.http.dsl.Http;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 

@@ -3,20 +3,20 @@
 <link rel="stylesheet" href="../static/css/sketch.css" th:href="@{/css/sketch.css}">
 <div class="full-align">
   <head>
-    <title>Add user</title>
+    <title>Novo usuário | Main</title>
     <meta charset="UTF-8">
   </head>
   <body>
-  <h1 style="color: antiquewhite">Add User</h1>
+  <h1 style="color: antiquewhite">Novo Usuário</h1>
   <div class="add-user add-user-circle">
     <form action="#" th:action="@{/add-user}" th:object="${user}" method="post">
       <p>
-        Name:
+        Nome:
         <br/>
         <input required type="text" th:field="*{Name}">
       </p>
       <p>
-        Occupation:
+        Cargo:
         <br/>
         <input required type="text" th:field="*{Occupation}">
       </p>
@@ -27,13 +27,13 @@
         <input type="submit" value="Submit"/> <input type="reset" value="Reset"/>
       </p>
     </form>
-    <div id="go-home">
-      <div id="go-home-inner">
+<!--    <div id="go-home">-->
+<!--      <div id="go-home-inner">-->
     <p>
-      <a href="/" class="go-home go-home-inner">Go Home</a>
+      <a href="/" class="go-home slide_left" style="height: 68% !important;">Início</a>
     </p>
-      </div>
-    </div>
+<!--      </div>-->
+<!--    </div>-->
   </div>
   </body>
 </div>

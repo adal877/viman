@@ -7,6 +7,7 @@
     /*color: antiquewhite !important;*/
 }
 .add-user-circle {
+    box-shadow: 6px 17px 47px;
     height: 193px !important;
     margin-top: 14%;
     text-align: center !important;
@@ -16,6 +17,7 @@
     width: 30%;
 }
 .main-circle {
+    box-shadow: 6px 17px 47px;
     height: 135px !important;
     margin-top: 14%;
     text-align: center !important;
@@ -80,6 +82,7 @@
     color: antiquewhite;
 }
 .user {
+    box-shadow: 6px 17px 47px;
     height: 158px !important;
     margin-top: 14%;
     text-align: center !important;
@@ -90,6 +93,7 @@
     width: 50%;
 }
 .visit {
+    box-shadow: 6px 17px 47px;
     height: 135px !important;
     margin-top: 5%;
     text-align: center !important;
@@ -113,6 +117,10 @@
     content: "\f666";
     background: dimgray;
     color: burlywood;
+}
+#footer-icon-bahai:hover {
+    transition: 1s;
+    box-shadow: 7px 3px 14px;
 }
 .hide {
     display: none;
@@ -147,6 +155,10 @@
     content: "\f113";
     background: burlywood !important;
     color: darkslategrey; !important;
+}
+#footer-icon-git:hover {
+    transition: 1s;
+    box-shadow: 7px 3px 14px;
 }
 .rotate-icon {
     transition:2.5s;

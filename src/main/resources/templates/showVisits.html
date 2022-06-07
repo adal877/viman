@@ -7,15 +7,15 @@
     <meta charset="UTF-8">
   </head>
   <body>
-  <h1>Visits</h1>
-  <div class="visit">
-    <p th:text="'Name: ' + ${visits.Name}"></p> <p th:text="'Address: ' + ${visits.Address}"></p>
-    <p th:text="'Age: ' + ${visits.Age}"></p> <p th:text="'Book(s): ' + ${visits.BookStudying} ? ${visits.BookStudying} : 'Nothing registered...'"></p>
-    <p th:text="'Observation(s): ' + ${visits.Observation}"></p>
-    Goes to the activities? <p th:type="checkbox" th:text="${visits.go2Activities} ? 'Yes' : 'No'"></p>
+  <h1>Visita</h1>
+  <div class="visit" style="height: 170px !important;">
+    <p th:text="'Nome: ' + ${visits.Name}"></p> <p th:text="'Endereço: ' + ${visits.Address}"></p>
+    <p th:text="'Idade: ' + ${visits.Age}"></p> <p th:text="'Livro(s): ' + ${visits.BookStudying} ? ${visits.BookStudying} : 'Nada registrado...'"></p>
+    <p th:text="'Observação(s): ' + ${visits.Observation}"></p>
+    <p th:type="checkbox" th:text="${visits.go2Activities} ? 'Frequenta as atividades? Sim' : 'Frequenta as atividades? Não'"></p>
     <br/>
     <br/>
-    <a href="/new-visit" class="go-home slide_left">Submit another visit</a>
+    <a href="/new-visit" class="go-home slide_left" style="height: 16%">Criar uma nova visita</a>
   </div>
   </body>
 </div>

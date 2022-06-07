@@ -8,7 +8,7 @@
 </head>
 <div class="visit">
     <body>
-    <h1>New Visit</h1>
+    <h1>Nova Visita</h1>
     <form action="#" th:action="@{/new-visit}" th:object="${visits}" method="post">
         <p>
             Nome: <input required type="text" th:field="*{Name}"/> Endereço: <input type="text" placeholder="[Rua], [bairro]" th:field="*{Address}"/>
@@ -20,8 +20,7 @@
         <p>
             <a style="color: burlywood">Frequenta as atividades? </a><input type="checkbox" style="color: burlywood" th:field="*{go2Activities}"/>
         </p>
-        <textarea rows="12" cols="100" name="description" style="align-content:center; overflow:auto; border:6px outset #dbbb83;margin-left: -15%" placeholder="Insert text here..." th:field="*{Observation}">
-Observações adicionais...
+        <textarea rows="12" cols="100" name="description" style="align-content:center; overflow:auto; border:6px outset #dbbb83;margin-left: -15%" placeholder="Observações adicionais..." th:field="*{Observation}">
              </textarea><br>
         <p>
           <input type="submit" value="Submit"/> <input type="reset" value="Reset"/>

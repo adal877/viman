@@ -6,19 +6,19 @@
   <title>User Data | Main</title>
   <meta charset="UTF-8">
 </head>
-<h1>User</h1>
+<h1>Usuário</h1>
 <div class="">
   <body>
     <div class="user">
       <br/>
       <p th:text="'Name: ' + ${user.Name}"></p>
       <p th:text="'Occupation: ' + ${user.Occupation}"></p>
-      Goes to the activities? <p th:type="checkbox" th:text="${user.go2Activities} ? 'Yes' : 'No'"></p>
+      <p th:type="checkbox" th:text="${user.go2Activities} ? 'Goes to the activities? Sim' : 'Goes to the activities? Não'"></p>
     </div>
-    <a href="/add-user" class="go-home slide_left">Submit another user</a>
-    <a href="/new-visit" class="go-home slide_left">Create a visit to it's user</a>
+    <a href="/add-user" class="go-home slide_left" style="width: 50%">Criar um novo usuário</a>
+    <a href="/new-visit" class="go-home slide_left" style="width: 50%">Criar uma visita para este usuário</a>
     <br/>
-    <a href="/" class="go-home slide_left">Go Home</a>
+    <a href="/" class="go-home slide_left" style="width: 50%">Início</a>
   </body>
 </div>
 </div>

@@ -1,13 +1,11 @@
-package com.example.sb_test2.Controllers;
+package com.example.ViMan.Controllers;
 
-import com.example.sb_test2.Model.User;
-import com.example.sb_test2.Model.Visits;
+import com.example.ViMan.Model.User;
+import com.example.ViMan.Model.Visits;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import java.util.List;
 
 @Controller
 public class SimpleController {
