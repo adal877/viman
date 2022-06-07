@@ -11,10 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SimpleController {
     @GetMapping("/add-user")
     public String sendForm(User user) {
-//        User.users.add(user);
-//        if(User.users.contains(user)) {
-//            return "showUser";
-//        }
         return "add-user";
     }
     @PostMapping("/add-user")
@@ -23,10 +19,6 @@ public class SimpleController {
     }
     @GetMapping("/new-visit")
     public String sendFormVisit(Visits visits, User users) {
-//        Visits.visits.add(visits);
-//        if(Visits.visits.contains(visits)) {
-//            return "showVisits";
-//        }
         return "new-visit";
     }
     @PostMapping("/new-visit")
