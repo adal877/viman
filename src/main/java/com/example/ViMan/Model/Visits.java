@@ -16,15 +16,12 @@ public class Visits extends Person {
     public String getBookStudying() {
         return BookStudying;
     }
-
     public void setBookStudying(String bookStudying) {
         BookStudying = bookStudying;
     }
-
     public String getObservation() {
         return Observation;
     }
-
     public void setObservation(String observation) {
         Observation = observation;
     }

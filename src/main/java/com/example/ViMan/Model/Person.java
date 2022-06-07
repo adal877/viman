@@ -20,38 +20,30 @@ public class Person {
         Age = age;
     }
     public Person() {
-
     }
     public String getName() {
         return Name;
     }
-
     public void setName(String name) {
         Name = name;
     }
-
     public int getAge() {
         return Age;
     }
-
     public void setAge(int age) {
         Age = age;
     }
-
     public int getYearDate() {
         LocalDateTime tempDate = LocalDateTime.now().minusYears(getAge());
         Date yearDate = Date.from(tempDate.atZone(ZoneId.systemDefault()).toInstant());
         return yearDate.getYear();
     }
-
     public void setYearDate(int yearDate) {
         YearDate = yearDate;
     }
-
     public Boolean getGo2Activities() {
         return go2Activities;
     }
-
     public void setGo2Activities(Boolean go2Activities) {
         this.go2Activities = go2Activities;
     }

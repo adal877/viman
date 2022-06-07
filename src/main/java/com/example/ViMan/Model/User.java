@@ -9,19 +9,15 @@ public class User extends Person {
     public String getOccupation() {
         return Occupation;
     }
-
     public void setOccupation(String occupation) {
         Occupation = occupation;
     }
-
     public String getPlaceOfWork() {
         return PlaceOfWork;
     }
-
     public void setPlaceOfWork(String placeOfWork) {
         PlaceOfWork = placeOfWork;
     }
-
     public void setName(String name) {
         super.setName(name);
     }
