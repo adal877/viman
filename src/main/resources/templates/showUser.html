@@ -2,27 +2,27 @@
 <html xmlns:th="http://www.thymeleaf.org" style="background: darkslategrey">
 <link rel="stylesheet" href="../static/css/sketch.css" th:href="@{/css/sketch.css}">
 <div class="full-align" style="color: antiquewhite">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Data | Main</title>
-    <meta charset="UTF-8">
-  </head>
-  <h1>Usuário</h1>
-  <div class="">
-    <body>
-    <div class="user">
-      <br/>
-      <p th:text="'Nome: ' + ${user.Name}"></p>
-      <p th:text="'Cargo: ' + ${user.Occupation}"></p>
-      <p th:type="checkbox"
-         th:text="${user.go2Activities} ? 'Frequenta as atividades? Sim' : 'Frequenta as atividades?? Não'"></p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Data | Main</title>
+        <meta charset="UTF-8">
+    </head>
+    <h1>Usuário</h1>
+    <div class="">
+        <body>
+        <div class="user">
+            <br/>
+            <p th:text="'Nome: ' + ${user.Name}"></p>
+            <p th:text="'Cargo: ' + ${user.Occupation}"></p>
+            <p th:type="checkbox"
+               th:text="${user.go2Activities} ? 'Frequenta as atividades? Sim' : 'Frequenta as atividades? Não'"></p>
+        </div>
+        <a href="/add-user" class="go-home slide_left" style="width: 50%">Criar um novo usuário</a>
+        <a href="/new-visit" class="go-home slide_left" style="width: 50%">Criar uma visita para este usuário</a>
+        <br/>
+        <a href="/" class="go-home slide_left" style="width: 50%">Início</a>
+        </body>
     </div>
-    <a href="/add-user" class="go-home slide_left" style="width: 50%">Criar um novo usuário</a>
-    <a href="/new-visit" class="go-home slide_left" style="width: 50%">Criar uma visita para este usuário</a>
-    <br/>
-    <a href="/" class="go-home slide_left" style="width: 50%">Início</a>
-    </body>
-  </div>
 </div>
 </html>
