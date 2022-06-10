@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* /Users/adal/Documents/java-projects/sb_test2/src/main/java/com/example/ViMan/SbTest2Application.java
